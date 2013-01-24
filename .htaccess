@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+Options -Indexes
+RewriteEngine On
+RewriteCond $1 !^(index\.php|media|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+#RewriteRule ^id(.*)$ /index.php/users/id/$1 [QSA]
